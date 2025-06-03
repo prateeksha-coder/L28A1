@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript String methods</h1>
+    <p>String method can convert number to string.</p>
+    <p id="number_result"></p>
+    <p id="string_result"></p>
+    <p id="search_result"></p>
+    <p id="replace_result"></p>
+    <script>
+    var x=90;
+    var y=70;
+    var str="Hey, how are doing?";
+    var r=str.search("doing");
+    var txt=str.replace("how are"," how are you");
+    document.getElementById("number_result").innerHTML=x+y;
+    document.getElementById("string_result").innerHTML=String(x)+" "+String(y);
+    document.getElementById("search_result").innerHTML=r;
+    document.getElementById("replace_result").innerHTML=txt;
+    </script>
+    <h1>JavaScript Error Handling</h1>
+    <p id="error_message">HEyy</p>
+    <script>
+        try{
+            addalert("Welcome Guest!");
+            //alert("Welcome Guest!");
+        }
+        catch(err){
+            document.getElementById("error_message").innerHTML=err.message;
+        }
+    </script>
+    <h2>JavaScript Arrow Functions</h2>
+    <p>this example shows and arrow Functions with a parameter. </p>
+    <p id="demo"></p>
+    <script>
+        add=(a,b)=>a+b;
+        document.getElementById("demo").innerHTML=add(4,6);
+    </script>
+</body>
+</html>
